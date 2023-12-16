@@ -1,4 +1,5 @@
 const wrapper = document.querySelector(".wrapper");
+const title = document.querySelector(".title");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
@@ -6,6 +7,7 @@ const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "Yay, see you on the 31st at 23:59!";
+  title.remove();
   gif.src =
     "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
 });
